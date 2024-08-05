@@ -26,12 +26,13 @@ describe('Create User', () => {
                 const { body, status } = res
                 const expectedResponse = {
                     err: false,
-                    code: 200,
+                    code: 201,
                     data: {
                         name : payload.name,
                         occupation: payload.occupation
                     },
-                    message: 'Success create new user'
+                    message: 'Success create new user',
+                    meta: null
                 }
                 expect(status).to.be.equal(201)
                 expect(body).to.deep.equal(expectedResponse)
