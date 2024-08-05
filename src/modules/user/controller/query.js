@@ -5,6 +5,7 @@ class UserQuery {
     static async createUser (payload, options) {
         try {
             const newData = await User.create(payload, options)
+
             const result = wrapper.success()
 
             result.data = newData
