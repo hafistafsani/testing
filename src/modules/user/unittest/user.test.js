@@ -15,7 +15,7 @@ describe("User Controller", () => {
     const insertUser = await controller.createUser({ name: "test" });
   });
 
-  it.only("Failed insert user at model", async () => {
+  it("Failed insert user at model", async () => {
     Sinon.throw(userModel, "create", new Error("ERROR STUB"));
 
     try {

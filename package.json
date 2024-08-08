@@ -6,7 +6,7 @@
   "scripts": {
     "test": "NODE_ENV=test mocha src/test/*.js --exit",
     "unit-test": "NODE_ENV=test mocha src/test/unittest --exit",
-    "test:coverage": "NODE_ENV=test nyc --reporter=html mocha src/test --exit --timeout 0 src/test/unittest --exit --timeout 0 ",
+    "test:coverage": "NODE_ENV=test nyc --reporter=html mocha src/test/*.js src/test/unittest/*.js --exit --timeout 0 ",
     "dev": "nodemon ./src/server.js"
   },
   "keywords": [],
