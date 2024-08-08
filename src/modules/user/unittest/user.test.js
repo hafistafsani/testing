@@ -21,7 +21,6 @@ describe("User Controller", () => {
     try {
       await userQuery.createUser({});
     } catch (error) {
-      console.log(error, "<err");
     }
   });
 });
